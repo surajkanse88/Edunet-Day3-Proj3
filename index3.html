@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrimonial Registration - Groom</title>
+</head>
+<body>
+
+<h2>Matrimonial Registration Form (Groom)</h2>
+
+<form action="#" method="post" enctype="multipart/form-data">
+
+    <!-- Photo Upload -->
+    <fieldset>
+        <legend><strong>Profile Photo</strong></legend>
+
+        <label>Upload Groom Photo:</label><br>
+        <input type="file" name="photo" accept="image/*" required><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Basic Information -->
+    <fieldset>
+        <legend><strong>Basic Information</strong></legend>
+
+        <label>Full Name:</label><br>
+        <input type="text" name="full_name" required><br><br>
+
+        <label>Date of Birth:</label><br>
+        <input type="date" name="dob" required><br><br>
+
+        <label>Age:</label><br>
+        <input type="number" name="age" min="18" required><br><br>
+
+        <label>Gender:</label><br>
+        <input type="radio" name="gender" value="Male" checked> Male<br><br>
+
+        <label>Height:</label><br>
+        <input type="text" name="height" placeholder="e.g. 5'9&quot;"><br><br>
+
+        <label>Weight (kg):</label><br>
+        <input type="number" name="weight"><br><br>
+
+        <label>Blood Group:</label><br>
+        <select name="blood_group">
+            <option value="">--Select--</option>
+            <option>A+</option><option>A-</option>
+            <option>B+</option><option>B-</option>
+            <option>O+</option><option>O-</option>
+            <option>AB+</option><option>AB-</option>
+        </select><br><br>
+
+        <label>Marital Status:</label><br>
+        <select name="marital_status" required>
+            <option value="">--Select--</option>
+            <option>Never Married</option>
+            <option>Divorced</option>
+            <option>Widower</option>
+        </select><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Religious & Cultural Details -->
+    <fieldset>
+        <legend><strong>Religious & Cultural Details</strong></legend>
+
+        <label>Religion:</label><br>
+        <input type="text" name="religion"><br><br>
+
+        <label>Caste:</label><br>
+        <input type="text" name="caste"><br><br>
+
+        <label>Sub-Caste:</label><br>
+        <input type="text" name="sub_caste"><br><br>
+
+        <label>Mother Tongue:</label><br>
+        <input type="text" name="mother_tongue"><br><br>
+
+        <label>Gotra:</label><br>
+        <input type="text" name="gotra"><br><br>
+
+        <label>Manglik:</label><br>
+        <select name="manglik">
+            <option value="">--Select--</option>
+            <option>Yes</option>
+            <option>No</option>
+            <option>Don't Know</option>
+        </select><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Education & Career -->
+    <fieldset>
+        <legend><strong>Education & Career</strong></legend>
+
+        <label>Highest Qualification:</label><br>
+        <input type="text" name="education"><br><br>
+
+        <label>Occupation:</label><br>
+        <input type="text" name="occupation"><br><br>
+
+        <label>Organization / Company:</label><br>
+        <input type="text" name="company"><br><br>
+
+        <label>Annual Income:</label><br>
+        <input type="text" name="income"><br><br>
+
+        <label>Work Location:</label><br>
+        <input type="text" name="work_location"><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Lifestyle Details -->
+    <fieldset>
+        <legend><strong>Lifestyle Details</strong></legend>
+
+        <label>Diet:</label><br>
+        <select name="diet">
+            <option value="">--Select--</option>
+            <option>Vegetarian</option>
+            <option>Non-Vegetarian</option>
+            <option>Eggetarian</option>
+        </select><br><br>
+
+        <label>Smoking:</label><br>
+        <select name="smoking">
+            <option>No</option>
+            <option>Yes</option>
+            <option>Occasionally</option>
+        </select><br><br>
+
+        <label>Drinking:</label><br>
+        <select name="drinking">
+            <option>No</option>
+            <option>Yes</option>
+            <option>Occasionally</option>
+        </select><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Family Details -->
+    <fieldset>
+        <legend><strong>Family Details</strong></legend>
+
+        <label>Father's Name:</label><br>
+        <input type="text" name="father_name"><br><br>
+
+        <label>Mother's Name:</label><br>
+        <input type="text" name="mother_name"><br><br>
+
+        <label>Father's Occupation:</label><br>
+        <input type="text" name="father_occupation"><br><br>
+
+        <label>Family Type:</label><br>
+        <select name="family_type">
+            <option>Nuclear</option>
+            <option>Joint</option>
+        </select><br><br>
+
+        <label>Number of Siblings:</label><br>
+        <input type="number" name="siblings"><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Contact Details -->
+    <fieldset>
+        <legend><strong>Contact Details</strong></legend>
+
+        <label>Mobile Number:</label><br>
+        <input type="tel" name="mobile" required><br><br>
+
+        <label>Email:</label><br>
+        <input type="email" name="email"><br><br>
+
+        <label>Address:</label><br>
+        <textarea name="address" rows="4" cols="40"></textarea><br><br>
+    </fieldset>
+
+    <br>
+
+    <!-- Partner Preferences -->
+    <fieldset>
+        <legend><strong>Partner Preferences</strong></legend>
+
+        <label>Preferred Age Range:</label><br>
+        <input type="text" name="preferred_age"><br><br>
+
+        <label>Preferred Height:</label><br>
+        <input type="text" name="preferred_height"><br><br>
+
+        <label>Preferred Religion / Caste:</label><br>
+        <input type="text" name="preferred_caste"><br><br>
+
+        <label>Additional Expectations:</label><br>
+        <textarea name="expectations" rows="4" cols="40"></textarea><br><br>
+    </fieldset>
+
+    <br>
+
+    <input type="submit" value="Register">
+    <input type="reset" value="Reset">
+
+</form>
+
+</body>
+</html>
